@@ -1,5 +1,5 @@
 {
-  "name": "app-builder-workspace",
+  "name": "kings-templar-chess",
   "private": true,
   "sideEffects": false,
   "type": "module",
@@ -90,5 +90,26 @@
     "typescript": "^5.7.0",
     "typescript-eslint": "^8.56.1",
     "vite": "^8.1.0"
-  }
+  },
+  "version": "1.0.0",
+  "description": "Chess.com-style browser chess with a Templar King take-back rule, Stockfish AI, training mode, and Templar-aware analysis.",
+  "homepage": "https://github.com/hilather/kings-templar-chess",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hilather/kings-templar-chess.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hilather/kings-templar-chess/issues"
+  },
+  "keywords": [
+    "chess",
+    "templar",
+    "stockfish",
+    "react",
+    "vite",
+    "variant",
+    "training",
+    "wasm"
+  ],
+  "license": "MIT"
 }
