@@ -7,6 +7,13 @@
 **Standard chess — until your piece falls.**  
 Then the **Templar King** may take that capturer back from *anywhere* on the board.
 
+<br/>
+
+### ▶️ [Play now → kings-templar-chess.grok.me](http://kings-templar-chess.grok.me/)
+
+<br/>
+
+[![Play Online](https://img.shields.io/badge/▶_Play_Online-kings--templar--chess.grok.me-7cb342?style=for-the-badge)](http://kings-templar-chess.grok.me/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](#stack)
 [![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](#stack)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](#stack)
@@ -21,6 +28,11 @@ Then the **Templar King** may take that capturer back from *anywhere* on the boa
 </p>
 
 <img src="docs/assets/menu.png" alt="Templar Chess main menu" width="820" />
+
+<p>
+  <a href="http://kings-templar-chess.grok.me/"><strong>Open the live game</strong></a>
+  · no install · runs in your browser
+</p>
 
 </div>
 
@@ -101,7 +113,18 @@ Everything else is classical chess: castling, en passant, promotion, stalemate, 
 
 ---
 
-## Quick start
+## Try it
+
+| | |
+| --- | --- |
+| **Live game** | **[http://kings-templar-chess.grok.me/](http://kings-templar-chess.grok.me/)** |
+| **Source** | [github.com/hilather/kings-templar-chess](https://github.com/hilather/kings-templar-chess) |
+
+Open the live link in any modern browser — pick a difficulty, optionally enable training mode, and play.
+
+---
+
+## Quick start (local)
 
 ```bash
 # clone
@@ -224,8 +247,12 @@ MIT — play freely, fork boldly, take back wisely.
 
 <div align="center">
 
+### [▶ Play King’s Templar Chess](http://kings-templar-chess.grok.me/)
+
 **Built with Grok · powered by Stockfish · blessed by the Templar King**
 
-`hilather/kings-templar-chess`
+[`hilather/kings-templar-chess`](https://github.com/hilather/kings-templar-chess)
+·
+[kings-templar-chess.grok.me](http://kings-templar-chess.grok.me/)
 
 </div>

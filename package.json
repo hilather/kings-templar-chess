@@ -92,8 +92,8 @@
     "vite": "^8.1.0"
   },
   "version": "1.0.0",
-  "description": "Chess.com-style browser chess with a Templar King take-back rule, Stockfish AI, training mode, and Templar-aware analysis.",
-  "homepage": "https://github.com/hilather/kings-templar-chess",
+  "description": "Chess.com-style browser chess with a Templar King take-back rule — play live at http://kings-templar-chess.grok.me/",
+  "homepage": "http://kings-templar-chess.grok.me/",
   "repository": {
     "type": "git",
     "url": "https://github.com/hilather/kings-templar-chess.git"
