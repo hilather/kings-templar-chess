@@ -202,6 +202,64 @@ export function Game() {
     void preloadStockfish();
   };
 
+  /** Demo position: legal Templar take-back after …Bg4 h3 Bxf3 (king can K@xf3). */
+  const loadTemplarDemo = useCallback(() => {
+    aiCancel.current += 1;
+    analysisCancel.current.cancelled = true;
+    trainingCancel.current.cancelled = true;
+    const g = new TemplarChess();
+    const seq: [Square, Square][] = [
+      ["e2", "e4"],
+      ["e7", "e5"],
+      ["g1", "f3"],
+      ["d7", "d6"],
+      ["b1", "c3"],
+      ["c8", "g4"],
+      ["h2", "h3"],
+      ["g4", "f3"], // Bxf3 — bishop just captured the knight
+    ];
+    for (const [from, to] of seq) {
+      const m = g.findMove(from, to);
+      if (!m) throw new Error(`Demo move failed: ${from}${to}`);
+      g.applyMove(m);
+    }
+    setEngine(g);
+    setPlayerColor("w");
+    setDifficultyId("beginner");
+    setSelected("e1");
+    setLegalMoves(g.moves({ square: "e1" }));
+    setPendingPromo(null);
+    setEndReason(null);
+    setWinner(null);
+    setShowEndModal(false);
+    setAiThinking(false);
+    setPhase("playing");
+    setFlip(false);
+    setTrainingMode(false);
+    setTrainingHint(null);
+    setTrainingLoading(false);
+    setAnalysisHistory([]);
+    setEvals([]);
+    setAnnotations([]);
+    setAnalysisPly(0);
+    setAnalysisLoading(false);
+    setMoveTick((t) => t + 1);
+    setStatusMsg("Templar take-back available");
+  }, []);
+
+  // Optional deep-link: /?demo=templar → legal take-back showcase
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const demo = new URLSearchParams(window.location.search).get("demo");
+    if (demo === "templar") {
+      try {
+        loadTemplarDemo();
+      } catch (e) {
+        console.error(e);
+      }
+    }
+  }, [loadTemplarDemo]);
+
   const enterAnalysis = useCallback(
     (sourceHistory?: GameMove[]) => {
       const h = sourceHistory ?? engine.getHistory();

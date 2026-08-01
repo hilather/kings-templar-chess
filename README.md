@@ -52,8 +52,10 @@ Everything else is classical chess: castling, en passant, promotion, stalemate, 
 | Engines ignore variant tactics | AI, training & analysis are **Templar-aware** |
 
 <p align="center">
-  <img src="docs/assets/templar.png" alt="Templar take-back targets on the board" width="560" />
+  <img src="docs/assets/templar.png" alt="Legal Templar take-back: after Bxf3 the white king is selected and a cyan ring marks the bishop on f3" width="420" />
 </p>
+
+<p align="center"><em>Example: …Bg4 h3 <strong>Bxf3</strong> — Black’s bishop just took the knight on f3. White’s king is selected; the <strong>cyan ring</strong> is the only Templar target (recapture that bishop).</em></p>
 
 ---
 
