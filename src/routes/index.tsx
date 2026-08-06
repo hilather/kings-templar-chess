@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ClientOnly } from "@tanstack/react-router";
-import { Game } from "@/components/chess/Game";
+import { AppRoot } from "@/components/chess/AppRoot";
 
 export const Route = createFileRoute("/")({
   component: HomePage,
@@ -9,7 +9,7 @@ export const Route = createFileRoute("/")({
 function HomePage() {
   return (
     <ClientOnly fallback={<GameShellFallback />}>
-      <Game />
+      <AppRoot />
     </ClientOnly>
   );
 }
